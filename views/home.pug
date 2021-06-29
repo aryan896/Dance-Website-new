@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts  
+    script (src='../static/index.js')
+block style
+    style 
+      include ../static/style.css
+block content 
+   
+    section#introSection
+        div Welcome to  Coffe shop
+        div.small "Only for COFFE LOVERS"
+    section#missionSection
+        h2 Our Mission
+        div.cards
+            div.card
+                h3 Perfection in coffe 
+                div.card-box
+                div.card-img
+                    img(src="/static/d.png")
+                div.card-content
+                    p This is the best place for coffe lovers
+
+            div.card
+                h3 Taste Which You Don't Forget 
+                div.card-box
+                div.card-img
+                    img(src="/static/c.png")
+                div.card-content
+                    p Good in taste 
+
+            div.card
+                h3 Expert Coffe Maker
+                div.card-box
+                div.card-img
+                    img(src="/static/d.png")
+
+                div.card-content
+                    p This is the best coffe cafe in globe 
+    section#sponsorsSection
+        h2 Our Sponsors
+        div.sponsor
+            img(src="../static/Davidoff_logo-removebg-preview.png",alt= "sponsor", class= "spImage")
+            img(src="../static/bru-removebg-preview.png", alt= "spnosor", class= "spImage")
+            img(src="../static/Nescafe-Logo.png", alt= "Sponsor Image", class= "spImage")
